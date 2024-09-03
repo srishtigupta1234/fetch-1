@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 600px;
+            gap:50px;
+            padding: 30px;
+            text-align: center;
+        }
+        img{
+            height: 58%;
+            width: 100%;
+        }
+        h4{
+            color: grey;
+        }
+        #container>div{
+        
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Movies</h1>
+    <hr>
+    <input type="text" id="search" placeholder="Search by name">
+    <div id="container"></div>
+</body>
+</html>
+<script src="index.js"></script>
